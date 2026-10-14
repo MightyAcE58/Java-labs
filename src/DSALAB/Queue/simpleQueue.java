@@ -39,17 +39,6 @@ public class simpleQueue {
                     System.out.println(Arrays.toString(a));
                     break;
                 case 3:
-//                    if (tail == a.length){
-//                        System.out.println("Queue overflow");
-//                        break;
-//                    }
-//                    System.out.println("Enter the value: ");
-//                    int en = sc.nextInt();
-//                    sc.nextLine();
-//                    a[tail]= en;
-//                    tail++;
-//                    System.out.println(Arrays.toString(a));
-//                    break;\
                     for (int i = head; i < tail; i++){
                         System.out.print(a[i] + " ");
                         System.out.println();

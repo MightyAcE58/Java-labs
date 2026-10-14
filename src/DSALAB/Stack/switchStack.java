@@ -67,8 +67,6 @@ public class switchStack {
                case null, default:
                    System.out.println("Enter a valid argument");
                    break;
-
-
            }
        }
        }
