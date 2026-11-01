@@ -1,4 +1,4 @@
-package OOPSLAB;
+package OOPSLAB.Interfaces;
 
 interface Vehicle {
      void start();

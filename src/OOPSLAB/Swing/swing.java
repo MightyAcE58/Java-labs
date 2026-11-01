@@ -95,7 +95,7 @@ public class swing extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        // Book Appointment
+
         if (e.getSource() == book) {
 
             if (name.getText().isEmpty() ||
@@ -112,7 +112,7 @@ public class swing extends JFrame implements ActionListener {
             String selectedTime =
                     time.getSelectedItem().toString();
 
-            // Check if slot is already booked
+
             for (int i = 0; i < model.getRowCount(); i++) {
 
                 if (model.getValueAt(i, 4)
@@ -134,7 +134,7 @@ public class swing extends JFrame implements ActionListener {
             else
                 type = "Online";
 
-            // Add appointment to table
+
             model.addRow(new Object[]{
                     name.getText(),
                     contact.getText(),
@@ -150,7 +150,7 @@ public class swing extends JFrame implements ActionListener {
             );
         }
 
-        // Cancel Appointment
+
         if (e.getSource() == cancel) {
 
             int row = table.getSelectedRow();
