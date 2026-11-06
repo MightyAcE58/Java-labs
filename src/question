@@ -1,0 +1,145 @@
+# DBMS Lab Questions and Subquestions
+
+Listed below in the order they appear in the lab record. SQL solutions and output labels are omitted.
+
+## Experiment 1 — DDL Commands (Student Database)
+
+1. Create a table for a Student with a Register Number, Date of Admission, Programme, Name, Email id, Date of Birth, City and CGPA as attributes.
+2. Add Mobile Number attribute to Student relation and Describe the Structure.
+3. Change the datatype of Name in Student relation and Describe the Structure.
+4. Change the size of any Attribute and Describe the Structure.
+5. Rename any of the Attribute and Describe the Structure.
+6. Insert 7 Records to Student relation.
+7. Copy the Contents of Student table and Name the table as stud relation.
+8. Delete the E-Mail attribute from Student relation and display the Structure.
+9. Display the Contents of the Stud relation.
+10. Rename the Student relation as Stu.
+11. Delete the Contents of the Student relation, describe the structure and display the contents of the table.
+12. Delete the Structure of the student relation, describe the structure and display the contents of the table.
+
+## Experiment 2 — DDL Commands (Book Database)
+
+1. Create a Table for Book Details with attributes as Book_id, Book_Name, Author, Publisher, Number_of_Copies, Category, etc., insert 5 records and display the structure and the table.
+2. Add Price attribute and Display the Structure.
+3. Change the datatype of the Book_Name and change the size of the publisher attribute and display the structure.
+4. Rename the Book_id attribute, insert 5 more records, copy the content of the Book table, delete the Category attribute and Rename the Table.
+5. Truncate and drop the table.
+
+## Experiment 3 — DML Commands (Student Database)
+
+1. List the records of student relation.
+2. List the Students whose Date of Birth is ’01-Mar-2000’.
+3. List the students from Delhi and Doing CSE.
+4. List the Students whose CGPA is greater than 8.
+5. List Name and E_Mail pf students not living in Mumbai.
+6. List students from Chennai or Delhi.
+7. Sort students by Date_of_Birth in Descending Order.
+8. Sort by Name and City.
+9. List Names starting with ‘R’ and ends with ‘I’.
+10. List Names containing the letter ‘a’.
+
+## Experiment 4 — Banking Database and Constraints
+
+Given the banking database below, with primary keys underlined in the record: Customer(name,id,city); Account(accno,acctype); Depositor(accno,id,amount).
+
+1. First Create tables without Constraints.
+2. Add Primary Key Constraints (Underlined attributes are primary Keys).
+3. Add the foreign keys wherever it’s applicable.
+4. Make sure that the name and acctype cannot be null.
+5. Ensure that the values for amount should be greater than 0.
+6. Insert a new column ‘branchname’ in the account relation which is unique.
+7. Drop the unique constraint for the attribute ‘branchname’.
+8. Set the default constraint for the attribute ‘city’ with the value ‘delhi’.
+9. Show the violations of foreign key and primary key constraints with examples.
+10. Drop the foreign key constraints in the Depositor relation.
+11. Describe the structure of the tables and display the table definitions.
+
+## Experiment 5 — Supplier Database and Constraints
+
+Given the database below, with primary keys underlined in the record: supplier(supplier_no, company); part(part_no, part_name); shipment(supplier_no, part_no, quantity).
+
+1. Create table without Constraints.
+2. Add Primary key Constraints.
+3. Add UNIQUE Constraint in part_name.
+4. Add Foreign key Constraints.
+5. Add CHECK Constraint for quantity.
+6. Insert sample records & Display the Tables.
+7. Demonstrate Primary key violation & Foreign Key violation.
+8. Demonstrate Check Constraint Violation.
+9. Drop Foreign key Constraints.
+
+## Experiment 6 — Employee Database and Aggregate Functions
+
+1. Create a table called Employee with appropriate Constraints.
+2. Count the Number of Employees in Employee Table.
+3. Calculate the Average Salary of all employees.
+4. Print the Highest and Lowest Salary of Employees.
+5. Count the Number of Employee who are working in Finance Department.
+6. Count the Number of Cities from Employee Relation.
+7. Find Average and Total Salary of Finance Department. Rename the Title Sum (Salary) as Total in the Output.
+8. Find the Number of Emp_IDs which has the greater Salary than 20000.
+9. Find the Number of Emp_IDs which has the Salary less than 20000.
+10. Count the DeptName which has more than 10k Salary.
+11. Number of Departments in each Area.
+12. Display the total Salary along with deptname at each location.
+13. Find min and max Salary for each Location.
+14. List the deptname with total emp_id at each area if the count is >1.
+15. List the deptname with total employees if the total is >3 at each dept and the name of the dept has the letter ‘e’.
+16. List the Number of Records at each dept with deptname.
+
+## Experiment 7 — Product Database, Relational Algebra and Joins
+
+1. Create a Product table with p_id, p_name and Create a Sales table with s_id, s_name, order_id as attributes and insert 5 data.
+2. Perform Union Operation.
+3. Perform Intersection Operation.
+4. Perform Set Difference Operation.
+5. Perform Cartesian Product Operation.
+6. Perform Inner Join.
+7. Perform Left join.
+8. Perform Right Join.
+9. Perform Full Join.
+10. Perform Self Join.
+11. Perform Natural Join.
+12. Perform Equi Join.
+
+## Experiment 8 — Hospital Management System
+
+The record introduces a Hospital Management System with the relations DEPARTMENT, DOCTOR, PATIENT, APPOINTMENT and BILL, then asks for SQL commands for these operations:
+
+1. Create tables & Insert sample records.
+2. Create the department table and insert sample records.
+3. Create the doctor table and insert sample records.
+4. Create the patient table and insert sample records.
+5. Create the appointments table and insert sample records.
+6. Create the bill table and insert sample records.
+7. Add Consultation Fee.
+8. Apply patient Integrity Constraints.
+9. Increase salary by 12% for doctors with >5 years experience.
+10. Delete cancelled appointments.
+11. Create doctor_department view.
+12. View patients with outstanding bills.
+13. Patients grouped by city, more than 1.
+14. Avg, high, low Salary by department.
+15. Departments whose total salary exceeds average department expenditure.
+16. Department having at least two doctors.
+17. Average consultation fee by specialization.
+18. Doctors handling more appointments than average.
+19. Patients who consulted more than one specialization.
+20. Every department with no. of doctors & appointments.
+
+## Experiment 9 — Stored Procedures
+
+1. Write a MySQL program to create a Book table with the attributes id, title, price, and ISBN. Insert sample records.
+2. Create a stored procedure to display all the records from the table.
+3. Write a MySQL stored procedure using IN parameters to update the price of a book based on its ISBN number. Display the updated records.
+4. Write a MySQL stored procedure using an OUT parameter to find the maximum price of books stored in the Book table. Display the highest price using a user-defined session variable.
+5. Write a MySQL stored procedure using an INOUT parameter to retrieve the current price of a book, increase it by ₹500, update the table, and display the new price.
+
+## Experiment 10 — User-Defined Functions
+
+1. Write a MySQL user-defined function named square_num() to calculate the square of a given integer and display the result by passing a value to the function.
+2. Write a MySQL user-defined function named get_discount() that accepts the price of a book and returns the price after deducting ₹200. Display the original book title and price along with the discounted price.
+
+## Experiment 11 — Triggers
+
+1. Write a MySQL trigger that automatically sets the price of a book to ₹500 before inserting a record if the given price is less than ₹500. Insert a sample record and display the updated table.

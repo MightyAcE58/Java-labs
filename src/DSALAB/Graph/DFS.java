@@ -23,7 +23,7 @@ class DFS {
     }
 
     public static void main(String[] args) {
-        DFS g = new DFS();
+        DFS g = new DFS();  
 
         System.out.print("DFS: ");
         g.dfs(0);

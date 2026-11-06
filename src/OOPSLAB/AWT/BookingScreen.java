@@ -13,7 +13,7 @@ public class BookingScreen extends Frame implements ActionListener {
     Button book;
 
     BookingScreen() {
-        setTitle("Movie Ticket Booking");
+        this.setTitle("Movie Ticket Booking");
         setSize(450, 500);
         setLayout(new FlowLayout());
 
@@ -42,9 +42,9 @@ public class BookingScreen extends Frame implements ActionListener {
 
         add(new Label("Seat Category:"));
         CheckboxGroup cg = new CheckboxGroup();
-        silver = new Checkbox("Silver", cg, true);
-        gold = new Checkbox("Gold", cg, false);
-        platinum = new Checkbox("Platinum", cg, false);
+        silver = new Checkbox("Silver",cg, true);
+        gold = new Checkbox("Gold", cg,false);
+        platinum = new Checkbox("Platinum", cg,false);
         add(silver);
         add(gold);
         add(platinum);
